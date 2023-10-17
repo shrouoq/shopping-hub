@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #103755;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  height: 30px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 92%;
+  margin: auto;
+}
+
+.nav-category {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.nav-category .container {
+  display: flex;
+  align-items: center;
+  color: #103755;
+}
+.nav-category .container .link {
+  color: #103755;
+}
+.nav-category .container .icon {
+  font-size: 20px;
+}
+.nav-category .container .break {
+  padding: 0px 15px;
+}
+.nav-category .container p {
+  padding: 0;
+}
+
+.shoppingCart {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.shoppingCart .data {
+  position: relative;
+  background-color: #fff;
+  color: black;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 991px) {
+  .shoppingCart .data {
+    flex-direction: column;
+  }
+  .shoppingCart .data {
+    width: 600px;
+  }
+  .shoppingCart .data .picBox {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .shoppingCart .data {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 620px) {
+  .shoppingCart .data {
+    width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .shoppingCart .data {
+    width: 300px;
+  }
+}
+.shoppingCart .data .close {
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #103755;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingCart .data .box {
+  flex: 1;
+}
+.shoppingCart .data .box.details {
+  overflow-y: scroll;
+}
+.shoppingCart .data .box.details .details-data .data-title {
+  color: #103755;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.shoppingCart .data .box.details .details-data .descreption {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #707b8e;
+  text-transform: capitalize;
+}
+.shoppingCart .data .box.details .details-data .price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #103755;
+  padding-bottom: 15px;
+}
+.shoppingCart .data .box.details .qty .num {
+  color: #103755;
+}
+.shoppingCart .data .box.details .qty .num .min, .shoppingCart .data .box.details .qty .num .plus {
+  padding: 0px 15px;
+  background-color: transparent;
+}
+.shoppingCart .data .box.details .qty .addToCard-btn {
+  margin-top: 15px;
+  background-color: #103755;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.shoppingCart .data .box.details .qty .addToCard-btn i {
+  padding-right: 10px;
+}
+.shoppingCart .data img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

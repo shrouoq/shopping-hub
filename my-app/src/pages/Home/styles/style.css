@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #103755;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  height: 30px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 92%;
+  margin: auto;
+}
+
+.nav-category {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.nav-category .container {
+  display: flex;
+  align-items: center;
+  color: #103755;
+}
+.nav-category .container .link {
+  color: #103755;
+}
+.nav-category .container .icon {
+  font-size: 20px;
+}
+.nav-category .container .break {
+  padding: 0px 15px;
+}
+.nav-category .container p {
+  padding: 0;
+}
+
+.categories {
+  margin-bottom: 50px;
+}
+.categories .container .title {
+  padding: 80px 0 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 30px;
+  color: #103755;
+}
+.categories .container .categories-box {
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.categories .container .categories-box .category-box {
+  width: 100%;
+  height: 200px;
+}
+.categories .container .categories-box .category-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.categories .container .categories-box .category-box p {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

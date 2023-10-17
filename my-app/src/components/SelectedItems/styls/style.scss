@@ -1,0 +1,170 @@
+@import '../../../App.scss';
+
+.selected-items{
+
+    .items-details{
+        padding: 50px 0;
+        .container{
+            display: flex;
+            gap: 50px 50px;
+            justify-content: space-between;
+
+            @media(max-width:991px){
+                flex-direction: column;
+            }
+
+            
+    
+            .items-box{
+                width: 65%;
+                @media(max-width:991px){
+                    width: 100%;
+                }
+                .item-box{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid rgb(227, 225, 225);
+                    margin-bottom: 30px;
+                    padding-bottom: 20px;
+
+                    @media(max-width:600px){
+                        flex-direction: column;
+                    }
+
+                    .item{
+                        display: flex;
+                        gap: 15px 15px;
+                        @media(max-width:600px){
+                            width: 100%;
+                            justify-content: space-between;
+                        }
+                        .pic{
+                            width: 150px;
+                            height: 150px;
+                            background-color: $clr-white;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            img{
+                                width: 100%;
+                                height: 100px;
+                            }
+                            button{
+                                color: $clr-regal-blue;
+                                background-color: transparent;
+                                border: 1px solid $clr-light-blue;
+                                padding: 5px 8px;
+                                margin-top: 10px;
+                            }
+                        }
+                        .item-data{
+                            color: $clr-light-blue;
+                            text-transform: capitalize;
+                            .item-data-title{
+                                // text-transform: capitalize;
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                            .num{
+                                padding: 10px 0;
+                                // text-transform: capitalize;
+                                button{
+                                    margin: 0px 10px;
+                                    padding: 5px 7px;
+                                    color: $clr-light-blue;
+                                    background-color: transparent;
+                                    border: 1px solid rgb(227, 225, 225);
+                                }
+
+                            }
+
+                        }
+                    }
+                    .totalPrice{
+                        color: $clr-regal-blue;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+
+                .clear{
+                    color: $clr-white;
+                    background-color: $clr-red;
+                    border-radius: 10px;
+                    font-size: 17px;
+                    padding: 8px 20px;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+
+            .price-details{
+                background-color: $clr-white;
+                flex: 1;
+                padding: 20px;
+                .priceBox{
+                    .priceBox-title , .price-footer p{
+                        color: $clr-regal-blue;
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+
+                    .content{
+                        margin: 20px 0;
+                        padding: 20px 0 120px;
+                        border-top: 1px solid rgb(227, 225, 225);
+                        border-bottom: 1px solid rgb(227, 225, 225);
+                        .box{
+                            display: flex;
+                            justify-content: space-between;
+                            color: $clr-light-blue;
+                            text-transform: capitalize;
+                            margin-bottom: 12px;
+                            font-weight: 400;
+
+                            .price-num{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    .price-footer{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span{
+                            font-weight: 600;
+                            color: $clr-light-blue;
+                            text-transform: capitalize;
+                        }
+
+                    }
+
+
+                }
+
+                .proceed-btn{
+                    background-color: $clr-gold;
+                    color: $clr-white;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    padding: 10px 0;
+                    margin-top: 20px;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+        }
+        }
+    }
+
+    .no-items{
+        margin: 50px;
+        color: $clr-red;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

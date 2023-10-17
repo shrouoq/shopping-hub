@@ -1,0 +1,123 @@
+@import '../../../App.scss';
+
+.shoppingCart{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    .data{
+        position: relative;
+        background-color: $clr-white;
+        color: black;
+        width: 700px;
+        height: 400px;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+
+        @media(max-width:991px){
+            &{
+                width: 600px;
+            }
+            flex-direction: column;
+            .picBox{
+                display: none;
+            }
+            
+        }
+
+        @media(max-width:767px){
+            height: fit-content;
+        }
+
+        @media(max-width:620px){
+            &{
+               width: 400px;
+            }
+        }
+
+        @media(max-width:420px){
+            &{
+               width: 300px;
+            }
+        }
+
+
+
+        .close{
+            position: absolute;
+            right: -10px;
+            top: -15px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: $clr-regal-blue;
+            color: $clr-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            flex: 1;
+            &.details{
+                overflow-y: scroll;
+                .details-data{
+                    .data-title{
+                        color: $clr-regal-blue;
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    .descreption{
+                        padding: 15px 0;
+                        font-size: 14px;
+                        color: $clr-light-blue;
+                        text-transform: capitalize;
+                    }
+                    .price{
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $clr-regal-blue;
+                        padding-bottom: 15px;
+                    }
+                }
+
+                .qty{
+                    .num{
+                        color: $clr-regal-blue;
+                         .min,.plus{
+                            padding: 0px 15px;
+                            background-color: transparent;
+                        }
+                        
+                    }
+
+                    .addToCard-btn{
+                        margin-top: 15px;
+                        background-color: $clr-regal-blue;
+                        color: white;
+                        font-size: 16px;
+                        border-radius: 10px;
+                        text-transform: capitalize;
+                        padding: 8px 12px;
+                        cursor: pointer;
+                        i{
+                            padding-right: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

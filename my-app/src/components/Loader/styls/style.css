@@ -1,0 +1,9 @@
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.Loader img {
+  width: 60px;
+}/*# sourceMappingURL=style.css.map */

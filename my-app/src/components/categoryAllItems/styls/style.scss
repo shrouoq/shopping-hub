@@ -1,0 +1,18 @@
+@import '../../../App.scss';
+
+.All-Items{
+    .container{
+        .title{
+            padding: 40px 0;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 30px;
+            color:$clr-regal-blue;
+        }
+        .Items-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            gap: 10px 10px;
+        }
+    }
+}

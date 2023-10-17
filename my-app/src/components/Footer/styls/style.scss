@@ -1,0 +1,33 @@
+@import '../../../App.scss';
+
+.Footer{
+    background-color: $clr-dark;
+    color: $clr-white;
+    margin-top: 50px;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        padding: 50px 0;
+        row-gap: 30px;
+        .box{
+            .box-name{
+                margin-bottom: 15px;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            .box-links{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                .link{
+                    color: #b5b5b6;
+                    font-size: 15px;
+                    i{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

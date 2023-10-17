@@ -1,0 +1,182 @@
+@import '../../../App.scss';
+
+.NavBar{
+    .TopNav{
+        padding: 15px 0;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .Logo{
+                .logoLink{
+                    font-size: 34px;
+                    color: $clr-regal-blue;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    span{
+                        color: $clr-gold;
+                    }
+                    @media(max-width: 991px){
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .search{
+                max-width: 300px;
+                width: 100%;
+                height: 30px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                overflow: hidden;
+                input{
+                    border: none;
+                    height: 30px;
+                    width: 90%;
+                    padding: 10px;
+                }
+               button{
+                width: 10%;
+                height: 30px;
+                background-color: $clr-gold;
+                color: $clr-white;
+                cursor: pointer;
+               }
+
+               @media(max-width:991px){
+                    display: none;
+                }
+            }
+
+           
+
+            .icons{
+                display: flex;
+                .shopping-basket{
+                    padding-right: 3px;
+                    i{
+                        font-size: 20px;
+                        color: $clr-regal-blue;
+                    }
+                }
+
+                .basketNum{
+                    color: $clr-regal-blue;
+                    position: relative;
+                    cursor: pointer;
+                    span{
+                        position: absolute;
+                        top: -10px;
+                        right: -15px;
+                        background-color: $clr-gold;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 20px;
+                        color: $clr-white;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomNav{
+        background-color: $clr-regal-blue;
+        padding: 10px 0;
+        .container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .icons-container{
+
+                .closeIcon{
+                    display: none;
+                }
+
+                .Navbar-Icons{
+                    .link{
+                        color: $clr-white;
+                        margin-left: 15px;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+
+            .bars{
+                i{
+                    color: $clr-gold;
+                    font-size: 20px;
+                    transition: $transition;
+                    display: none;
+                    &:hover{
+                        color: $clr-white;
+                    }
+                }
+            }
+
+
+
+            @media(max-width: 991px){
+                .icons-container{
+                        position: fixed;
+                        width: 280px;
+                        height: 100vh;
+                        background-color: $clr-white;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        right: 0;
+                        top: 0;
+                        padding: 70px 20px 20px;
+                        transition: $transition;
+                        transform: translateX(200%);
+                        .closeIcon{
+                            position: absolute;
+                            top: 15px;
+                            right: 15px;
+                            color: $clr-white;
+                            background-color: $clr-black;
+                            width: 25px;
+                            height: 25px;
+                            text-align: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            padding-top: 1px;
+                            display: block;
+                        }
+
+                        .Navbar-Icons{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 17px;
+                            .link{
+                                color: $clr-regal-blue;
+                                border-bottom: 1px solid #ebebed;
+                                width: fit-content;
+                                padding-bottom: 5px;
+                            }
+                        }
+    
+                    
+                }
+
+                .showSideBar{
+                    transform: translateX(0);
+                }
+
+                .bars{
+                    i{
+                        display: block;
+                    }
+                }
+            }
+
+            
+
+
+        }
+    }
+}

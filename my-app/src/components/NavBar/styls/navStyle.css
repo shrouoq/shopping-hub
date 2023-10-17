@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #103755;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  height: 30px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 92%;
+  margin: auto;
+}
+
+.nav-category {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.nav-category .container {
+  display: flex;
+  align-items: center;
+  color: #103755;
+}
+.nav-category .container .link {
+  color: #103755;
+}
+.nav-category .container .icon {
+  font-size: 20px;
+}
+.nav-category .container .break {
+  padding: 0px 15px;
+}
+.nav-category .container p {
+  padding: 0;
+}
+
+.NavBar .TopNav {
+  padding: 15px 0;
+}
+.NavBar .TopNav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavBar .TopNav .container .Logo .logoLink {
+  font-size: 34px;
+  color: #103755;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.NavBar .TopNav .container .Logo .logoLink span {
+  color: #eeb808;
+}
+@media (max-width: 991px) {
+  .NavBar .TopNav .container .Logo .logoLink {
+    font-size: 28px;
+  }
+}
+.NavBar .TopNav .container .search {
+  max-width: 300px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.NavBar .TopNav .container .search input {
+  border: none;
+  height: 30px;
+  width: 90%;
+  padding: 10px;
+}
+.NavBar .TopNav .container .search button {
+  width: 10%;
+  height: 30px;
+  background-color: #eeb808;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .NavBar .TopNav .container .search {
+    display: none;
+  }
+}
+.NavBar .TopNav .container .icons {
+  display: flex;
+}
+.NavBar .TopNav .container .icons .shopping-basket {
+  padding-right: 3px;
+}
+.NavBar .TopNav .container .icons .shopping-basket i {
+  font-size: 20px;
+  color: #103755;
+}
+.NavBar .TopNav .container .icons .basketNum {
+  color: #103755;
+  position: relative;
+  cursor: pointer;
+}
+.NavBar .TopNav .container .icons .basketNum span {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: #eeb808;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.NavBar .bottomNav {
+  background-color: #103755;
+  padding: 10px 0;
+}
+.NavBar .bottomNav .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.NavBar .bottomNav .container .icons-container .closeIcon {
+  display: none;
+}
+.NavBar .bottomNav .container .icons-container .Navbar-Icons .link {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.NavBar .bottomNav .container .bars i {
+  color: #eeb808;
+  font-size: 20px;
+  transition: all 0.5s linear;
+  display: none;
+}
+.NavBar .bottomNav .container .bars i:hover {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .NavBar .bottomNav .container .icons-container {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 0;
+    top: 0;
+    padding: 70px 20px 20px;
+    transition: all 0.5s linear;
+    transform: translateX(200%);
+  }
+  .NavBar .bottomNav .container .icons-container .closeIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    background-color: #000;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-top: 1px;
+    display: block;
+  }
+  .NavBar .bottomNav .container .icons-container .Navbar-Icons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+  }
+  .NavBar .bottomNav .container .icons-container .Navbar-Icons .link {
+    color: #103755;
+    border-bottom: 1px solid #ebebed;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 5px;
+  }
+  .NavBar .bottomNav .container .showSideBar {
+    transform: translateX(0);
+  }
+  .NavBar .bottomNav .container .bars i {
+    display: block;
+  }
+}/*# sourceMappingURL=navStyle.css.map */
